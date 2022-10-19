@@ -62,7 +62,7 @@ header nav ul li a {
 .hero {
     margin-top: -1px;
     /*Prevent a thin white line to appear between .hero and header*/
-    padding: 13%;
+    padding: 10%;
     background-color: #1F2937;
 }
 
@@ -88,5 +88,50 @@ header nav ul li a {
         margin-top: 15px;
         aspect-ratio: 16 / 9;
         width: 100%;
+    }
+}
+
+
+/* Second Section: Information */
+
+.info .title {
+    padding: 5%;
+    text-align: center;
+}
+
+.info .content {
+    padding: 0% 15% 10% 15%;
+}
+
+.info .card-container {
+    display: flex;
+}
+
+.info .card-container ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.info .card-container ul li .card-image {
+    width: 100%;
+    background-color: aquamarine;
+    aspect-ratio: 1 / 1;
+    border: 2px solid black;
+    border-radius: 7%;
+}
+
+@media (max-width: 800px) {
+    .info .card-container ul {
+        flex-direction: column;
+    }
+    .info .card-container ul li {
+        width: 30%;
+        margin: auto;
     }
 }
