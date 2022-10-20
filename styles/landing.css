@@ -143,3 +143,31 @@ header nav ul li a {
     padding: 13%;
     background-color: #E5E7EB;
 }
+
+
+/*Fourth Section: Call to Action*/
+
+.action {
+    padding: 12%;
+    background-color: #3882F6;
+}
+
+.action .container {
+    display: flex;
+}
+
+.action .container .content {
+    flex: 70%
+}
+
+.action .container .button {
+    flex: 30%;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .action .container {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
