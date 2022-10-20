@@ -171,3 +171,13 @@ header nav ul li a {
         gap: 16px;
     }
 }
+
+
+/*Footer*/
+
+footer {
+    background-color: #1F2937;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
