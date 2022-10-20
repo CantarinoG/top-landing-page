@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Righteous&family=Roboto+Condensed&display=swap');
+:root {
+    --darkest: #0D1C29;
+    --lightest: #E8F1F2;
+    --teal-blue: #42728C
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +16,20 @@
 
 header {
     display: flex;
-    background-color: #1F2937;
-    color: white;
+    background-color: var(--darkest);
+    color: var(--lightest);
 }
 
 header .logo {
     flex: 40%;
     text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+header .logo span {
+    font-family: 'Righteous', cursive;
+    font-size: x-large;
+    color: var(--teal-blue);
 }
 
 header nav {
@@ -41,11 +55,18 @@ header nav ul {
 
 header nav ul li {
     flex: 0 0 auto;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-header nav ul li a {
+header nav ul li:hover {
+    color: var(--teal-blue);
+    transition: 0.3s
+}
+
+a {
     text-decoration: none;
     color: inherit;
+    line-height: 100%;
     /* TODO: ADD HOVER EFFECT*/
 }
 
@@ -63,7 +84,7 @@ header nav ul li a {
     margin-top: -1px;
     /*Prevent a thin white line to appear between .hero and header*/
     padding: 10%;
-    background-color: #1F2937;
+    background-color: var(--darkest);
 }
 
 .hero .container {
