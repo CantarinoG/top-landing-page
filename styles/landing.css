@@ -135,3 +135,11 @@ header nav ul li a {
         margin: auto;
     }
 }
+
+
+/*Third Section: Quote*/
+
+.quote {
+    padding: 13%;
+    background-color: #E5E7EB;
+}
