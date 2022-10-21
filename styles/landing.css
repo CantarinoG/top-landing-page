@@ -4,6 +4,7 @@
     --lightest: #E8F1F2;
     --teal-blue: #42728C;
     --beau-blue: #B1C7D0;
+    --indigo-dye: #0A4769;
     /*https://coolors.co/0d1c29-0e1f2d-0a4769-42728c-799cae-e8f1f2*/
 }
 
@@ -147,9 +148,24 @@ a {
 
 /* Second Section: Information */
 
+.info {
+    background-image: linear-gradient(var(--darkest), var(--indigo-dye));
+    margin-top: -1px;
+}
+
 .info .title {
     padding: 5%;
     text-align: center;
+    color: var(--lightest);
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.info .title h2 {
+    border-top: 1px solid var(--beau-blue);
+    padding-top: 16px;
+    color: var(--beau-blue);
 }
 
 .info .content {
@@ -171,12 +187,22 @@ a {
     text-align: center;
 }
 
+.info .card-container ul li {
+    flex: 25%;
+}
+
 .info .card-container ul li .card-image {
     width: 100%;
-    background-color: aquamarine;
     aspect-ratio: 1 / 1;
-    border: 2px solid black;
+    border: 2px solid var(--teal-blue);
     border-radius: 7%;
+    box-shadow: 0 0 .2rem var(--lightest), 0 0 .2rem var(--lightest), 0 0 2rem var(--teal-blue), 0 0 0.8rem var(--teal-blue), 0 0 2.8rem var(--teal-blue), inset 0 0 1.3rem var(--teal-blue);
+}
+
+.info .card-container ul li h3 {
+    color: var(--lightest);
+    margin-top: 12px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 @media (max-width: 800px) {
