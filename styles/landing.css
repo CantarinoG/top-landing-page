@@ -197,6 +197,13 @@ a {
     border: 2px solid var(--teal-blue);
     border-radius: 7%;
     box-shadow: 0 0 .2rem var(--lightest), 0 0 .2rem var(--lightest), 0 0 2rem var(--teal-blue), 0 0 0.8rem var(--teal-blue), 0 0 2.8rem var(--teal-blue), inset 0 0 1.3rem var(--teal-blue);
+    transition: 0.3s;
+}
+
+.info .card-container ul li .card-image:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
 }
 
 .info .card-container ul li h3 {
@@ -219,8 +226,19 @@ a {
 /*Third Section: Quote*/
 
 .quote {
+    background-image: linear-gradient(var(--indigo-dye), var(--teal-blue));
+    margin-top: -1px;
     padding: 13%;
-    background-color: #E5E7EB;
+    color: var(--lightest);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4vh;
+}
+
+.quote cite {
+    display: block;
+    margin-top: 12px;
+    font-style: normal;
+    text-align: end;
 }
 
 
