@@ -237,7 +237,7 @@
     .action {
         padding: 12%;
         margin-top: -1px;
-        background-image: linear-gradient(var(--teal-blue), var(--indigo-dye));
+        background-image: linear-gradient(var(--teal-blue), var(--darkest));
     }
     
     .action .container {
@@ -251,6 +251,10 @@
     
     .action .container .content {
         flex: 70%;
+    }
+    
+    .action .container .content .brand {
+        color: var(--beau-blue);
     }
     
     .action .container .content h3 {
@@ -267,8 +271,8 @@
         border: 2px solid var(--lightest);
         border-radius: 10px;
         padding: 10px;
-        background-color: transparent;
-        font-family: 'Roboto Condensed', sans-serif;
+        background-color: var(--teal-blue);
+        font-family: 'Righteous', cursive;
         transition: 0.3s;
         font-size: 6vh;
     }
@@ -290,8 +294,9 @@
     /*Footer*/
     
     footer {
-        background-color: #1F2937;
+        background-color: var(--darkest);
         text-align: center;
         padding: 20px;
-        color: white;
+        color: var(--lightest);
+        font-family: 'Roboto Condensed', sans-serif;
     }
